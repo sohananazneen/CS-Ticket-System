@@ -1,0 +1,137 @@
+[
+  {
+    "id": "TKT-1001",
+    "title": "Login Authentication Failure",
+    "description": "Users reporting 500 error when attempting to log in via OAuth.",
+    "customer": "TechCorp Solutions",
+    "priority": "Critical",
+    "status": "In-Progress",
+    "createdAt": "2024-03-01T08:30:00Z"
+  },
+  {
+    "id": "TKT-1002",
+    "title": "Dashboard Loading Latency",
+    "description": "Main analytics dashboard taking over 10 seconds to render for premium accounts.",
+    "customer": "Global Logistics Inc.",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2024-03-01T09:15:00Z"
+  },
+  {
+    "id": "TKT-1003",
+    "title": "Typo in Billing Invoice",
+    "description": "The word 'Quantity' is misspelled as 'Quanity' on PDF exports.",
+    "customer": "Small Biz Retail",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2024-03-01T10:05:00Z"
+  },
+  {
+    "id": "TKT-1004",
+    "title": "API Rate Limit Increase Request",
+    "description": "Customer requesting a higher tier for their production environment.",
+    "customer": "DataFlow Systems",
+    "priority": "Medium",
+    "status": "In-Progress",
+    "createdAt": "2024-03-02T11:20:00Z"
+  },
+  {
+    "id": "TKT-1005",
+    "title": "Password Reset Email Not Sending",
+    "description": "Automated recovery emails are not reaching users with @outlook.com domains.",
+    "customer": "Individual User",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2024-03-02T13:45:00Z"
+  },
+  {
+    "id": "TKT-1006",
+    "title": "Mobile App Crash on iOS 17",
+    "description": "App closes immediately after splash screen on the latest iOS update.",
+    "customer": "AppStream Media",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2024-03-03T07:10:00Z"
+  },
+  {
+    "id": "TKT-1007",
+    "title": "Dark Mode Contrast Issues",
+    "description": "Text is barely readable in the settings menu when dark mode is enabled.",
+    "customer": "Creative Design Co.",
+    "priority": "Low",
+    "status": "In-Progress",
+    "createdAt": "2024-03-03T14:22:00Z"
+  },
+  {
+    "id": "TKT-1008",
+    "title": "Database Connection Timeout",
+    "description": "Intermittent timeouts occurring during peak hours in the US-East region.",
+    "customer": "CloudScale Ops",
+    "priority": "Critical",
+    "status": "In-Progress",
+    "createdAt": "2024-03-04T02:00:00Z"
+  },
+  {
+    "id": "TKT-1009",
+    "title": "Feature Request: Export to Excel",
+    "description": "User wants to export transaction history to .xlsx instead of just .csv.",
+    "customer": "Finance First Ltd.",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2024-03-04T10:30:00Z"
+  },
+  {
+    "id": "TKT-1010",
+    "title": "Expired SSL Certificate",
+    "description": "The staging environment URL is throwing security warnings.",
+    "customer": "Internal QA Team",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2024-03-04T16:50:00Z"
+  },
+  {
+    "id": "TKT-1011",
+    "title": "Broken Link in Footer",
+    "description": "The 'Privacy Policy' link leads to a 404 page.",
+    "customer": "Legal Guard Services",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2024-03-05T08:00:00Z"
+  },
+  {
+    "id": "TKT-1012",
+    "title": "New User Invitation Error",
+    "description": "Admin cannot add users with special characters in their names.",
+    "customer": "Urban Planning Org",
+    "priority": "Medium",
+    "status": "In-Progress",
+    "createdAt": "2024-03-05T09:40:00Z"
+  },
+  {
+    "id": "TKT-1013",
+    "title": "Integration with Slack Failing",
+    "description": "Notifications are not appearing in Slack channels as configured.",
+    "customer": "Startup Hub",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2024-03-05T12:15:00Z"
+  },
+  {
+    "id": "TKT-1014",
+    "title": "Missing Search Filter",
+    "description": "There is no way to filter tickets by 'Date Range' in the admin panel.",
+    "customer": "Support Team B",
+    "priority": "Low",
+    "status": "In-Progress",
+    "createdAt": "2024-03-05T15:30:00Z"
+  },
+  {
+    "id": "TKT-1015",
+    "title": "Account Overcharge Issue",
+    "description": "Customer was billed twice for the monthly subscription in February.",
+    "customer": "Pro-Build Construction",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2024-03-05T17:00:00Z"
+  }
+]
