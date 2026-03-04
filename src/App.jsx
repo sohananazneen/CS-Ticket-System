@@ -5,8 +5,10 @@ import Home from "./components/Home/Home";
 function App() {
   return (
     <>
-      <ToastContainer />
-      <Home />
+      <div className="bg-gray-100">
+        <ToastContainer />
+        <Home />
+      </div>
     </>
   );
 }
