@@ -1,13 +1,10 @@
 import React from "react";
-import { toast } from "react-toastify";
+import Navbar from "../Navbar/Navbar";
 
 export default function Home() {
-  const notify = () => toast("Wow so easy!");
   return (
-    <div>
-      <button onClick={notify} class="btn btn-error">
-        Home
-      </button>
+    <div className="container mx-auto">
+      <Navbar />
     </div>
   );
 }
