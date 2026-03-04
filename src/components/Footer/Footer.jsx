@@ -10,7 +10,7 @@ export default function Footer() {
       <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
         <nav>
           <p>CS — Ticket System</p>
-          <p class="w-75">
+          <p className="max-w-xs">
             Our CS Ticket System provides a seamless bridge between your needs
             and our solutions. We are dedicated to providing timely, transparent
             support to ensure your business never misses a beat. Experience
