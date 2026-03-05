@@ -12,11 +12,15 @@ const TdataPromise = fetchTickets();
 export default function Tickets() {
   const [selectedTickets, setSelectedTickets] = useState([]);
   // console.log(selectedTickets);
+  const [resolved, setResolved] = useState([]);
+
   const removeTicket = (t) => {
     // console.log(t)
     const filteredData = selectedTickets.filter((tck) => tck.id !== t.id);
     // console.log(filteredData);
     setSelectedTickets(filteredData);
+
+    setResolved([...resolved, t]);
   };
   return (
     <>
@@ -48,6 +52,7 @@ export default function Tickets() {
             <Task
               selectedTickets={selectedTickets}
               removeTicket={removeTicket}
+              resolved={resolved}
             />
           </Suspense>
         </div>

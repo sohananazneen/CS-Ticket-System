@@ -1,7 +1,8 @@
 import React from "react";
 import TaskCard from "../TaskCard/TaskCard";
+import ResolvedTicket from "../ResolvedTicket/ResolvedTicket";
 
-export default function Task({ selectedTickets, removeTicket }) {
+export default function Task({ selectedTickets, removeTicket, resolved }) {
   //   console.log(selectedTickets);
   return (
     <>
@@ -23,7 +24,19 @@ export default function Task({ selectedTickets, removeTicket }) {
       </div>
       <div className="mt-4">
         <h1 className="text-2xl">Resolved Task</h1>
-        <p>No resolved tasks yet.</p>
+        {resolved.length === 0 ? (
+          <p>No resolved tasks yet.</p>
+        ) : (
+          <>
+            {resolved.map((rTicket) => (
+              <ResolvedTicket
+                key={rTicket.id}
+                rTicket={rTicket}
+                removeTicket={removeTicket}
+              ></ResolvedTicket>
+            ))}
+          </>
+        )}
       </div>
     </>
   );

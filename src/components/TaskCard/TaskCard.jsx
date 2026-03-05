@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 const TaskCard = ({ selectedTicket, removeTicket }) => {
   const handleRemove = () => {
     removeTicket(selectedTicket);
-    toast("Completed");
+    toast("Resolved");
   };
   return (
     <>
