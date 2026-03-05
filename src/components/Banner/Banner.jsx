@@ -1,7 +1,7 @@
 import React from "react";
 import bannerImg1 from "../../assets/vector1.png";
 
-export default function Banner() {
+export default function Banner({ count }) {
   return (
     <>
       <div className="grid md:grid-cols-2 gap-2 m-2">
@@ -29,7 +29,7 @@ export default function Banner() {
           ></div>
           <div>
             <p className="text-2xl">In-Progress</p>
-            <p className="text-5xl font-semibold mt-2">0</p>
+            <p className="text-5xl font-semibold mt-2">{count}</p>
           </div>
         </div>
 
@@ -57,7 +57,7 @@ export default function Banner() {
           ></div>
           <div>
             <p className="text-2xl">Resolved</p>
-            <p className="text-5xl font-semibold mt-2">0</p>
+            <p className="text-5xl font-semibold mt-2">{count}</p>
           </div>
         </div>
       </div>
