@@ -1,10 +1,12 @@
 import React from "react";
 import { FaCircle } from "react-icons/fa6";
 import { MdOutlineDateRange } from "react-icons/md";
+import { toast } from "react-toastify";
 
-const SingleTicketCard = ({ ticket, setCount, count, }) => {
+const SingleTicketCard = ({ ticket, setCount, count }) => {
   const handleCount = () => {
     setCount(count + 1);
+    toast("Ticket Added");
   };
   return (
     <>
