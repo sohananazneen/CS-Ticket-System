@@ -2,7 +2,13 @@ import React, { use } from "react";
 
 import SingleTicketCard from "../SingleTicketCard/SingleTicketCard";
 
-export default function TicketsCard({ TdataPromise, setCount, count }) {
+export default function TicketsCard({
+  TdataPromise,
+  setCount,
+  count,
+  selectedTickets,
+  setSelectedTickets,
+}) {
   const ticketsData = use(TdataPromise);
   //   console.log(ticketsData);
 
@@ -15,6 +21,8 @@ export default function TicketsCard({ TdataPromise, setCount, count }) {
             ticket={ticket}
             setCount={setCount}
             count={count}
+            selectedTickets={selectedTickets}
+            setSelectedTickets={setSelectedTickets}
           ></SingleTicketCard>
         ))}
       </div>

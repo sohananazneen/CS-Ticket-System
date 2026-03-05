@@ -11,6 +11,9 @@ const TdataPromise = fetchTickets();
 
 export default function Tickets() {
   const [count, setCount] = useState(0);
+  const [selectedTickets, setSelectedTickets] = useState([]);
+  // console.log(selectedTickets);
+
   return (
     <>
       <Banner count={count} />
@@ -27,9 +30,12 @@ export default function Tickets() {
               TdataPromise={TdataPromise}
               setCount={setCount}
               count={count}
+              selectedTickets={selectedTickets}
+              setSelectedTickets={setSelectedTickets}
             />
           </Suspense>
         </div>
+
         {/* tasks  */}
         <div className="md:col-span-1 m-4">
           <Suspense
@@ -37,7 +43,7 @@ export default function Tickets() {
               <span className="loading loading-spinner text-primary"></span>
             }
           >
-            <Task />
+            <Task selectedTickets={selectedTickets} />
           </Suspense>
         </div>
       </div>
