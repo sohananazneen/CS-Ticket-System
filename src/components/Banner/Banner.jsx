@@ -1,7 +1,7 @@
 import React from "react";
 import bannerImg1 from "../../assets/vector1.png";
 
-export default function Banner({ selectedTickets }) {
+export default function Banner({ selectedTickets, resolved }) {
   return (
     <>
       <div className="grid md:grid-cols-2 gap-2 m-2">
@@ -59,9 +59,7 @@ export default function Banner({ selectedTickets }) {
           ></div>
           <div>
             <p className="text-2xl">Resolved</p>
-            <p className="text-5xl font-semibold mt-2">
-              {selectedTickets.length}
-            </p>
+            <p className="text-5xl font-semibold mt-2">{resolved.length}</p>
           </div>
         </div>
       </div>

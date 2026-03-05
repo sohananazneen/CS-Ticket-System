@@ -24,7 +24,7 @@ export default function Tickets() {
   };
   return (
     <>
-      <Banner selectedTickets={selectedTickets} />
+      <Banner selectedTickets={selectedTickets} resolved={resolved}/>
       {/* Customer Tickets */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-2 mt-8 mr-2">
         {/* cards */}
