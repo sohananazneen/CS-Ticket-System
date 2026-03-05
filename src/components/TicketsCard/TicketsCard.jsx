@@ -4,8 +4,6 @@ import SingleTicketCard from "../SingleTicketCard/SingleTicketCard";
 
 export default function TicketsCard({
   TdataPromise,
-  setCount,
-  count,
   selectedTickets,
   setSelectedTickets,
 }) {
@@ -18,9 +16,8 @@ export default function TicketsCard({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-2">
         {ticketsData.map((ticket) => (
           <SingleTicketCard
+            key={ticket.id}
             ticket={ticket}
-            setCount={setCount}
-            count={count}
             selectedTickets={selectedTickets}
             setSelectedTickets={setSelectedTickets}
           ></SingleTicketCard>

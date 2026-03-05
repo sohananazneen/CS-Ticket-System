@@ -3,15 +3,8 @@ import { FaCircle } from "react-icons/fa6";
 import { MdOutlineDateRange } from "react-icons/md";
 import { toast } from "react-toastify";
 
-const SingleTicketCard = ({
-  ticket,
-  setCount,
-  count,
-  selectedTickets,
-  setSelectedTickets,
-}) => {
-  const handleCount = () => {
-    setCount(count + 1);
+const SingleTicketCard = ({ ticket, selectedTickets, setSelectedTickets }) => {
+  const handleSelectTickets = () => {
     toast("Ticket Added");
     setSelectedTickets([...selectedTickets, ticket]);
   };
@@ -20,7 +13,7 @@ const SingleTicketCard = ({
       <div
         className="card bg-base-100 shadow-xl"
         onClick={() => {
-          handleCount();
+          handleSelectTickets();
         }}
       >
         <div className="card-body">

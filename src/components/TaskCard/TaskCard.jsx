@@ -1,8 +1,9 @@
 import React from "react";
 import { toast } from "react-toastify";
 
-const TaskCard = ({ selectedTicket }) => {
-  const handleComplete = () => {
+const TaskCard = ({ selectedTicket, removeTicket }) => {
+  const handleRemove = () => {
+    removeTicket(selectedTicket);
     toast("Completed");
   };
   return (
@@ -13,7 +14,7 @@ const TaskCard = ({ selectedTicket }) => {
             <h1>{selectedTicket.title}</h1>
           </div>
           <button
-            onClick={() => handleComplete()}
+            onClick={() => handleRemove()}
             className="btn btn-success btn-block"
           >
             Complete
