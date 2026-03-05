@@ -1,6 +1,10 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const TaskCard = ({ selectedTicket }) => {
+  const handleComplete = () => {
+    toast("Completed");
+  };
   return (
     <>
       <div className="card bg-base-100 shadow-xl mt-4">
@@ -8,7 +12,12 @@ const TaskCard = ({ selectedTicket }) => {
           <div className="card-title flex justify-between">
             <h1>{selectedTicket.title}</h1>
           </div>
-          <button className="btn btn-success btn-block">Complete</button>
+          <button
+            onClick={() => handleComplete()}
+            className="btn btn-success btn-block"
+          >
+            Complete
+          </button>
         </div>
       </div>
     </>
