@@ -1,16 +1,78 @@
-# React + Vite
+# 🎫 Customer Support Zone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
 
-Currently, two official plugins are available:
+Customer Support Zone is a React-based web application that helps manage customer support tickets efficiently. Users can track ticket progress, mark tasks as completed, and monitor resolved issues through an interactive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧰 Main Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS / Tailwind CSS / DaisyUI
+* React-Toastify
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Main Features
+
+* 📊 Track **In Progress** and **Resolved** tickets
+* 🧾 Display tickets in a **card-based layout**
+* ➕ Add tickets to **Task Status section**
+* ✅ Mark tasks as completed
+* 🔔 Toast notifications using React-Toastify
+* 📱 Fully responsive design
+
+---
+
+## 📦 Dependencies
+
+```bash
+npm install react
+npm install react-dom
+npm install react-toastify
+```
+
+(If using Tailwind)
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+```
+
+---
+
+## ⚙️ How to Run Locally
+
+Follow these steps to run the project on your local machine:
+
+```bash
+# 1. Clone the repository
+git clone YOUR_REPO_URL_HERE
+
+# 2. Navigate to project folder
+cd customer-support-zone
+
+# 3. Install dependencies
+npm install
+
+# 4. Start development server
+npm run dev
+```
+
+👉 Then open:
+`http://localhost:3000` (or your terminal URL)
+
+---
+
+## 🔗 Relevant Links
+
+* 🌐 Live Project: https://cs-ticket-system-sn.netlify.app/
+* 📁 Repository: https://github.com/sohananazneen/CS-Ticket-System.git
+---
+
+## 👩‍💻 Author
+
+**Sohana Nazneen**
+📧 [sohana.nazneen.1@gmail.com](mailto:sohana.nazneen.1@gmail.com)
